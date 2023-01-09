@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "build": "npm install",
-     "serve": "node dist/app.js",
+    "start": "nodemon --watch backend --exec babel-node app.js",
+    "build": "rm -rf dist && babel backend -d dist && cd frontend && npm install && npm run build",
+    "serve": "node dist/app.js",
     "heroku-prebuild": "cd frontend && npm install --dev"
   },
   "dependencies": {
