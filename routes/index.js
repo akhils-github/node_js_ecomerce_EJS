@@ -322,14 +322,14 @@ router.post('/checkout',async(req,res)=>{
   
  
   console.log(req.session.netTotal);
-  console.log("989579798589756759569666696++5556+5+5+5");
+  
   
   if(req.session.netTotal){
-    console.log("999999999999999999999999999999999999999999");
+   
     console.log(address);
     productHelpers. placeOrder(address,products,req.session.netTotal,req.body.paymentmethod).then((orderId)=>{
 
-      console.log("5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555");
+      
       console.log(req.body);
       console.log(orderId); 
       req.session.orderid=orderId

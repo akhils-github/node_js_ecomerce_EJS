@@ -3,8 +3,8 @@ const { response } = require('express');
 const async = require('hbs/lib/async');
 const Razorpay = require('razorpay');
 var instance = new Razorpay({
-    key_id: 'rzp_test_LzENomul3uevEZ',
-    key_secret: 'XR8HpjEDW4U4yk01pct2rnkA',
+    key_id: 'rzp_test_1Mkxufgdm5Oi3k',
+    key_secret: 'hwfnkyWFTaCWZ4mRunmq4tNV',
 });
 const paypal = require('paypal-rest-sdk');
 paypal.configure({
@@ -752,7 +752,7 @@ module.exports = {
     verifyPayment: (details) => {
         return new Promise((resolve, reject) => {
             const crypto = require('crypto');
-            let hmac = crypto.createHmac('sha256', 'XR8HpjEDW4U4yk01pct2rnkA')
+            let hmac = crypto.createHmac('sha256', 'hwfnkyWFTaCWZ4mRunmq4tNV')
 
             hmac.update(details['payment[razorpay_order_id]'] + '|' + details['payment[razorpay_payment_id]']);
             hmac = hmac.digest('hex')
