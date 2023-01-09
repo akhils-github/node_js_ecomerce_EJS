@@ -9,8 +9,8 @@ var instance = new Razorpay({
 const paypal = require('paypal-rest-sdk');
 paypal.configure({
     'mode': 'sandbox',
-    'client_id': 'Af75DnFpVjrqCa9a-umcYLEmTvYvpXtPjkXz58KI5Ys6JoikhsrIpJruJZ9ssVYb51_9d4X80erZv4eG',
-    'client_secret': 'ENxAvJ1jLE8G6mhr0q1sL2-qrGbEtsvVUYw4Doi2wtuMq_HQN7s6qh24rSI1KDfSoY2NTVK-z54btyKe'
+    'client_id': 'AVOxZThF7JvlBbiai95cPSKQDk2lfMxMmBNtoI4NNw7ml613gOow5Ox2Pe75LX6WbGaLuQJxIghuQxb8',
+    'client_secret': 'EKATIWR8o5j5ojHZRrOyK4AVC5aHPPS2KKk0YaKw3j1VZY9Iora4KvVi9FJ37rPSIcoP3fF4oUaUxatl'
 })
 var db = require('../config/connection')
 var collection = require('../config/users');
