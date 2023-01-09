@@ -5,6 +5,8 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "build": "npm install",
+     "serve": "node dist/server.js",
+    "heroku-prebuild": "cd frontend && npm install --dev"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
