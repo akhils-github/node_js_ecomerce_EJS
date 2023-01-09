@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon app.js",
-    "build": "npm install && npm run build",
-    "serve": "node dist/app.js"
+    "build": "npm install && npm run build,
+    //"serve": "node dist/app.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
