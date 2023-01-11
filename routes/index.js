@@ -27,8 +27,8 @@ const verifylogin = (req, res, next) => {
     res.redirect('/login');
   }
 };
-router.get("/error",(req,res)=>{
-  res.render("error")
+router.get('/error',(req,res)=>{
+  res.render('error')
 })
 
 /* GET home page. */
